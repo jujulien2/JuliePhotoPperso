@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  font-family: "Oswald", sans-serif;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  top: 1px;
+  height: 100%;
+  width: 100%;
+  z-index: 140;
+  position: fixed;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: loaderTime forwards 2.2s;
+}
+.loader .box {
+  position: relative;
+  border: rgba(128, 128, 128, 0.26) solid 7px;
+  height: 250px;
+  width: 450px;
+  background-color: rgb(59, 55, 55);
+  border-radius: 20px;
+}
+.loader .box .roundObjectif {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  border: black dotted 7px;
+  background-color: rgba(32, 14, 14, 0.274);
+  animation: spinObjectif forwards 1.6s;
+}
+
+.littleBox {
+  border-top: rgba(128, 128, 124, 0.63) solid 3px;
+  background-color: rgba(59, 55, 55, 0.16);
+  position: absolute;
+  left: 18px;
+  border-radius: 5px;
+  top: -18px;
+  z-index: -1;
+  width: 65px;
+  height: 40px;
+  animation: clickButton forwards 0.5s;
+  animation-delay: 1.5s;
+}
+
+.littleRoundIn {
+  height: 145px;
+  width: 145px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.541);
+  animation: moveCenter forwards 1.6s;
+}
+.littleRoundIn .logoLoader {
+  position: absolute;
+  height: 161px;
+  left: 8px;
+  bottom: 1px;
+}
+.littleRoundIn .logoLoaderReflect {
+  position: absolute;
+  height: 161px;
+  right: 8px;
+  bottom: 1px;
+  transform: rotate(180deg);
+}
+
+.rotateReflect {
+  margin-top: 1em;
+  opacity: 0.3;
+}
+
+.littleBoxReflect {
+  border-bottom: rgba(128, 128, 124, 0.548) solid 3px;
+  background-color: rgb(54, 51, 51);
+  position: absolute;
+  right: 18px;
+  border-radius: 5px;
+  bottom: -18px;
+  z-index: -1;
+  width: 65px;
+  height: 40px;
+  animation: clickButtonReflect forwards 0.5s;
+  animation-delay: 1.5s;
+}
+
+.hidden {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.headerWrapper {
+  top: 0px;
+  background-color: black;
+  padding-right: 15em;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.headerWrapper ul {
+  font-weight: 200;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.headerWrapper img {
+  height: 135px;
+  list-style: none;
+}
+
+header li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.linkClicked {
+  opacity: 0.4;
+  font-size: 21px;
+  transition: 0.2s;
+}
+
+.title {
+  margin-top: 13em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h1 {
+  font-weight: 200;
+  font-size: 55px;
+  text-transform: uppercase;
+}
+.title .hrOne {
+  width: 6%;
+  margin-bottom: 25px;
+}
+.title .hrTwo {
+  width: 6%;
+  margin-top: 50px;
+}
+
+.quote {
+  color: rgba(255, 255, 255, 0.377);
+  font-size: 30px;
+  font-weight: 200;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.imgFirst {
+  margin-bottom: 4em;
+}
+.imgFirst img {
+  height: 650%;
+  width: 65%;
+}
+
+.contact {
+  position: relative;
+  font-weight: 200;
+  color: white;
+  flex-direction: column;
+  width: 258px;
+  margin: 0 auto;
+  font-size: 22px;
+  text-align: center;
+  gap: 2em;
+}
+.contact a {
+  font-weight: 400;
+  display: block;
+  background-color: white;
+  padding: 15px 55px 15px 55px;
+  border-radius: 2px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.fa-envelope-open-text:hover {
+  transform: rotate(360deg);
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.unVisibility {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.Visibility {
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+  top: 126px;
+  transition: all 0.4s;
+}
+
+.carrouselNote {
+  width: 100%;
+}
+
+h2 {
+  margin-top: 5em;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
