@@ -1,0 +1,53 @@
+@keyframes loaderTime {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes clickButtonReflect {
+  0% {
+    bottom: -18px;
+  }
+  50% {
+    bottom: -13px;
+  }
+  100% {
+    bottom: -18px;
+  }
+}
+@keyframes clickButton {
+  0% {
+    top: -18px;
+  }
+  50% {
+    top: -13px;
+  }
+  100% {
+    top: -18px;
+  }
+}
+@keyframes spinObjectif {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes moveCenter {
+  50% {
+    height: 165px;
+    width: 165px;
+  }
+  100% {
+    width: 135px;
+    height: 135px;
+  }
+}/*# sourceMappingURL=keyframeStyle.css.map */

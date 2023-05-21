@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  font-family: "Oswald", sans-serif;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerWrapper {
+  top: 0px;
+  background-color: black;
+  padding-right: 15em;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.headerWrapper ul {
+  font-weight: 200;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.headerWrapper img {
+  height: 135px;
+  list-style: none;
+}
+
+header li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.linkClicked {
+  opacity: 0.4;
+  font-size: 21px;
+  transition: 0.2s;
+}
+
+h1 {
+  margin-bottom: 2em;
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  color: white;
+  font-size: 55px;
+}
+
+.packages {
+  height: 1700px;
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10em;
+}
+
+.packageOne, .packageTwo, .packageThree {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  height: calc(33.3333333333% - 6.6666666667em);
+  background-color: black;
+  box-shadow: rgba(255, 255, 255, 0.795) 2px 4px 20px 1px;
+  font-family: "Caveat", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.packageOne:hover, .packageTwo:hover, .packageThree:hover {
+  transition: all 0.4s;
+  animation: moveHoverPackages forwards 0.8s;
+  filter: brightness(1.5);
+}
+.packageOne i, .packageTwo i, .packageThree i {
+  color: rgba(255, 255, 255, 0.322);
+  position: absolute;
+  left: -6px;
+  top: 1px;
+}
+.packageOne p, .packageTwo p, .packageThree p {
+  color: rgba(92, 87, 85, 0.966);
+  font-size: 90px;
+  filter: brightness(1.8);
+  text-transform: uppercase;
+}/*# sourceMappingURL=packages.css.map */

@@ -41,7 +41,7 @@ body {
   border-radius: 100%;
   border: black dotted 7px;
   background-color: rgba(32, 14, 14, 0.274);
-  animation: spinObjectif forwards 1.6s;
+  animation: spinObjectif forwards 1.4s;
 }
 
 .littleBox {
@@ -145,7 +145,7 @@ header li a {
   align-items: center;
 }
 .title h1 {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 55px;
   text-transform: uppercase;
 }
@@ -175,15 +175,17 @@ header li a {
 }
 
 .contact {
+  cursor: pointer;
   position: relative;
   font-weight: 200;
   color: white;
   flex-direction: column;
-  width: 258px;
-  margin: 0 auto;
-  font-size: 22px;
+  font-size: 23px;
   text-align: center;
   gap: 2em;
+}
+.contact p {
+  width: 245px;
 }
 .contact a {
   font-weight: 400;
@@ -212,12 +214,16 @@ header li a {
   position: absolute;
   opacity: 1;
   z-index: 1;
-  top: 126px;
+  top: 169px;
   transition: all 0.4s;
 }
 
 .carrouselNote {
   width: 100%;
+  height: 300px;
+  background-color: white;
+  margin-bottom: 5em;
+  margin-top: 5em;
 }
 
 h2 {

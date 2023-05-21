@@ -1,0 +1,8 @@
+@keyframes moveHoverPackages {
+  20% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+}/*# sourceMappingURL=keyframePackage.css.map */

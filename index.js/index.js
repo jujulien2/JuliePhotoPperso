@@ -1,19 +1,18 @@
 // Header reaction on click
-let preview = null
-const headerWrapper = Array.from(document.querySelectorAll('.headerWrapper ul li'))
-console.log(headerWrapper);
+// let preview = null
+// const headerWrapper = Array.from(document.querySelectorAll('.headerWrapper ul li'))
+// console.log(headerWrapper);
 
-let clickLink = function (event) {
-    event.preventDefault()
-    event.target.classList.add('linkClicked')
-    if (preview !== null) {
-        preview.classList.remove('linkClicked');
-    }
-    preview = event.target
-}
-headerWrapper.forEach((el) => {
-    el.addEventListener('click', clickLink)
-})
+// let clickLink = function (event) {
+//     event.target.classList.add('linkClicked')
+//     if (preview !== null) {
+//         preview.classList.remove('linkClicked');
+//     }
+//     preview = event.target
+// }
+// headerWrapper.forEach((el) => {
+//     el.addEventListener('click', clickLink)
+// })
 
 // scroll delete header
 const justheaderWrapper = document.querySelector('.headerWrapper')
@@ -38,5 +37,10 @@ iconContact.addEventListener('mouseenter', function () {
     contactLinkJs.classList.remove('unVisibility')
 
     contactLinkJs.classList.add('Visibility')
+})
+iconContact.addEventListener('mouseleave', function () {
+    contactLinkJs.classList.add('unVisibility')
+
+    contactLinkJs.classList.remove('Visibility')
 })
 
